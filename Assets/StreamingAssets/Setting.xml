@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommonTag>
+
+  <LOG_LEVENL>3</LOG_LEVENL>
+  <!--显示debug信息为  false   隐藏debug信息为  true-->
+  <IsShowDebug>false</IsShowDebug>
+  <!--待机时间间隔-->
+  <StandByTime>600</StandByTime>
+  <!--图片爬升的速度-->
+  <MoveSpeed>400</MoveSpeed>
+  <!--COM滑屏接口设置写在这里-->
+  <portName>COM3</portName>
+  <!--COM灯光接口设置写在这里-->
+  <portLigthName>COM4</portLigthName>
+  <!--点位指令放在这里-->
+  <!--      
+    point0Com  为复位点
+    point1Com  为第1个点位
+    point2Com  为第2个点位
+    point3Com  为第3个点位
+    point4Com  为第4个点位
+    point5Com  为第5个点位
+    point6Com  为第6个点位
+      -->
+  <PointCom>
+    <point0Com>AA FF 02 12  00   00    00 00 00 00 00 00 00 00    00 00 15 64   00 00 00 0A      83 55</point0Com>
+    <point1Com>AA FF 01 12  01   01    00 00 00 00 00 05 BE 98    00 00 42 D0   00 00 00 01      70 55</point1Com>
+    <point2Com>AA FF 01 12  01   01    00 00 00 00 00 0B EA 9B    00 00 42 D0   00 00 00 01      A5 55</point2Com>
+    <point3Com>AA FF 01 12  01   01    00 00 00 00 00 11 F7 38    00 00 42 D0   00 00 00 01      55 55</point3Com>
+    <point4Com>AA FF 01 12  01   01    00 00 00 00 00 18 4A 18    00 00 42 D0   00 00 00 01      8F55</point4Com>
+    <point5Com>AA FF 01 12  01   01    00 00 00 00 00 1E 7D D2   00 00 42 D0   00 00 00 01      82 55</point5Com>
+    <point6Com>AA FF 01 12  01   01    00 00 00 00 00 24 98 31    00 00 42 D0   00 00 00 01       02 55</point6Com>
+  </PointCom>
+  <!--点位开灯命令(大写),对应的小写字母为关灯命令，关灯命令不用配置-->
+  <Points>
+    <Point1>H</Point1>
+    <Point2>G</Point2>
+    <Point3>F</Point3>
+    <Point4>E</Point4>
+    <Point5>D</Point5>
+    <Point6>C</Point6>
+    <Point7>B</Point7>
+    <Point8>A</Point8>
+  </Points>
+
+</CommonTag>
